@@ -1,0 +1,21 @@
+package Convert;
+
+import java.util.*;
+
+public class MinutesToDays {
+
+
+	private static Scanner input;
+
+	public static void main(String[] args) {
+
+		System.out.print("Input the number of minutes : ");
+		input = new Scanner(System.in);
+		input = new Scanner(System.in);
+		long min=input.nextInt();
+		int years= (int) ((min)/(60*24*365));
+		int days= (int) (((min)%(60*24*365))/(60*24));
+		System.out.println(min+" minutes is approximately "+years+" and "+days+" days.");
+	}
+
+}
